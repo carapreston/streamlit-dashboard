@@ -8,7 +8,7 @@ st.set_page_config(page_title="Global Food & Wealth", layout="wide")
 @st.cache_data
 def load_data():
     try:
-        path = r"C:\Users\carac\Documents\DataVisAssignment\calories_gdp_population.csv"
+        path = "calories_gdp_population.csv"
         data = pd.read_csv(path)
         
         # clean column names (removes hidden spaces)
@@ -288,3 +288,4 @@ if df is not None:
 else:
     st.warning("The dataframe 'df' is empty. Please check the CSV file path and column names.")
     
+
